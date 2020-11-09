@@ -1,7 +1,5 @@
 function playsound(note) {
     console.log(note);
-    console.log("Playsound!");
-
     switch (note) {
         case 'C':
             document.getElementById('C').play();
@@ -92,7 +90,68 @@ function playsound(note) {
             break;
 
     }
-
-
-
 }
+
+window.onkeydown = function (e) {
+    e.preventDefault();
+    var note = e.key;
+    switch (note.toUpperCase()) {
+        case 'A':
+            document.getElementById('C').play();
+            break;
+        case 'W':
+            document.getElementById('Csharp').play();
+            break;
+        case "S":
+            document.getElementById("D").play();
+            break;
+        case 'E':
+            document.getElementById('Eb').play();
+            break;
+        case 'D':
+            document.getElementById('E').play();
+            break;
+        case 'F':
+            document.getElementById('F').play();
+            break;
+        case 'T':
+            document.getElementById('Fsharp').play();
+            break;
+        case 'G':
+            document.getElementById('G').play();
+            break;
+        case 'Y':
+            document.getElementById('Gsharp').play();
+            break;
+        case 'H':
+            document.getElementById('A').play();
+            break;
+        case 'U':
+            document.getElementById('Bb').play();
+            break;
+        case 'J':
+            document.getElementById('B').play();
+            break;
+        case 'K':
+            document.getElementById('HighC').play();
+            break;
+        case 'O':
+            document.getElementById('HighCsharp').play();
+            break;
+        case 'L':
+            document.getElementById('HighD').play();
+            break;
+        case 'P':
+            document.getElementById('HighEb').play();
+            break;
+        case ';':
+            document.getElementById('HighE').play();
+            break;
+        case "'":
+            document.getElementById('HighF').play();
+            break;
+        default:
+            break;
+
+    }
+};
