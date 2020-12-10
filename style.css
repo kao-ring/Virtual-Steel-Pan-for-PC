@@ -1,7 +1,17 @@
-div{
+div, img{
    text-align: center;
 }
 
 #key_assign{
    width: 400px;
 }
+
+/* .musicsheet .input-group{
+   margin-top: 10px;
+  margin-left: 20px;
+   width: 80%;
+  
+} */
+
+
+
