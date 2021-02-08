@@ -15,3 +15,11 @@ div, img{
 
 
 
+@media screen and (max-height: 375px) {
+   #keymap{
+      display: none;
+   }
+   div, img{
+      height: 375px
+   }
+}
